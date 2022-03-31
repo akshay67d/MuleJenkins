@@ -36,8 +36,8 @@
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${mule.version}</muleVersion>
 						<!-- Deploy User Parameter -->
-						<username>__pankajchhipa</username>
-						<password>Pankaj@123</password>
+						<username>${anypoint.username}</username>
+						<password>${anypoint.password}</password>
 
 						<environment>${env}</environment>
 						<applicationName>${appname}</applicationName>
@@ -45,9 +45,6 @@
 						<workerType>${vCore}</workerType>
 						<workers>${workers}</workers>
 						<objectStoreV2>true</objectStoreV2>
-						<properties>
-          					<key>value</key>
-          				</properties>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
